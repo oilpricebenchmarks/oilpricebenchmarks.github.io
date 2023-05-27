@@ -1,6 +1,6 @@
 # Site settings
-title: Crude Oil Lifelong/Continual Learning Benchmark Datasets
-description: Showcase of the research paper Real World Time Series Benchmark Datasets with Temporal Distribution Shifts: Global Crude Oil Asset Price and Volatility
+title: Crude Oil Time Series Benchmark Datasets
+description: "Showcase of the research paper Real World Time Series Benchmark Datasets with Temporal Distribution Shifts: Global Crude Oil Asset Price and Volatility"
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oilpricebenchmarks.github.io" # the base hostname & protocol for your site e.g., http://willianjusten.com
 
