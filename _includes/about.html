@@ -4,18 +4,22 @@
     We present time-series benchmarks in the financial domain, focusing on global crude oil price markers: West Texas
     Intermediate (WTI), Brent Blend, and Dubai Crude. These datasets cover over 30 years and exhibit significant
     distribution shifts.
-
+    <br> 
+    <br> 
     Time-series data pose challenges such as correlatedness, non-stationarity, missing data, and spurious outliers. We
     address the problem of out-of-distribution detection and emphasize the relevance of our benchmarks for continual
     learning.
-
-    Our contributions include creating real-world benchmark datasets, transforming data into volatility proxies, fitting
-    models using expectation-maximization, and providing contextual labels aligning with real-world events.
-
+    <br> 
+    <br> 
+    Our contributions include creating real-world benchmark datasets by transforming asset price data into volatility proxies, fitting
+    models using expectation-maximization, generating contextual task labels that align with real-world events, and providing these labels to the public.
+    <br> 
+    <br> 
     We hope these benchmarks accelerate research in handling distribution shifts in real-world data, in particular due
     to the global importance of the assets represented by the datasets.
-
-    <b>To download the benchmark datasets and generated task labels, see the Results section below.</b>
+    <br>
+    <br>
+    <a class="center-fit" href="https://placeholder.com">Download Benchmark Datasets with Task Labels here</a>
   </p>
 </div>
 <div class="paper-details">
@@ -25,28 +29,33 @@
     task, or regimes, based on asset price volatility, a macroeconomic trend that correlates with critical global
     events, such as economic downturns or recessions.
   </p>
-  <img src="/assets/imgs/brent_price_to_label_w_recess_k=3.png">
+    <figure class="center">
+      <img class="center-fit" src="/assets/imgs/brent_price_to_label_w_recess_k=3.png">
+      <figcaption>Label Generation on Brent Blend Crude Oil Data</figcaption>
+    </figure>
   <p>
-
     We provide the benchmark datasets and task labels for each step for each dataset in the results section below.
-
+    <br> 
+    <br> 
     Furthermore, we evaluate four continual learning algorithms on all three datasets. Two of these algorithms, MoB and
-    MOLe,
-    instantiate new few-shot models adapted from a meta-learned prior. The two others, MAML k-shot and MAML Continuous
+    MOLe, instantiate new few-shot models adapted from a meta-learned prior. The two others, MAML k-shot and MAML Continuous
     use a single model that is adapted from a meta-learned prior.
   </p>
 </div>
 <div class="paper-details">
   <h1>Results</h1>
 
-  1. The benchmark datasets can be downloaded in csv format <a href="placeholder">here.</a>
-
-  2. The task labels for each timestep for each benchmark dataset can be downloaded in csv format <a
-    href="placeholder">here.</a>
-
+  <b>1. The benchmark datasets can be downloaded in csv format</b> <a href="placeholder">here.</a>
+  <br> 
+  <br> 
+  <b>2. The task labels for each timestep for each benchmark dataset can be downloaded in csv format</b> <a
+  href="placeholder">here.</a>
+  <br>
+  <br>  
   3. We report the mean squared error of each algorithm on each benchmark dataset. For MoB and MOLe we also report the
   number of models instantiated.
-
+  <br> 
+  <br> 
   (Figures to be added)
   <p></p>
 </div>
@@ -54,16 +63,19 @@
   <h1>Conclusion</h1>
   <p>
     In conclusion, we have introduced three novel time-series benchmark datasets that encompass the global crude oil
-    market. These datasets were meticulously processed to fit into tasks using an expectation-maximization algorithm,
-    providing valuable insight into temporal distribution shifts and their significant impact on predictive models. The
-    benchmarks come equipped with labels aligning with significant real-world events, creating a rich context for
+    market and generated task labels aligning with significant real-world events, creating a rich context for
     further exploration and understanding.
-
+    <br>
+    <br>  
     Our goal is to fuel advancements in areas such as continual learning and out-of-distribution detection, while
-    addressing challenges posed by sequential data like non-stationarity and correlatedness. We believe that these
+    addressing challenges posed by sequential data. 
+    <br>
+    <br>
+    We believe that these
     benchmarks, due to the societal importance of the assets they represent, can make a substantial contribution to AI
     research, particularly in handling real-world data that contains distribution shifts.
-
+    <br>
+    <br>  
     As AI continues to permeate every sector, the importance of such representative, real-world benchmarks will continue
     to grow.
   </p>

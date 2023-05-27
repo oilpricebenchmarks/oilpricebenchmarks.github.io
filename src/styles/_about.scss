@@ -38,7 +38,13 @@
 }
 
 .paper-details {
-  text-align: center;
+  align-items: center;
+  max-width: 90%;
+  max-height: 90%;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
   margin: 5px auto;
   h1 {
     font-weight: 400;
