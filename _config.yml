@@ -1,0 +1,20 @@
+# Site settings
+title: Crude Oil Lifelong/Continual Learning Benchmark Datasets
+description: Showcase of the research paper Real World Time Series Benchmark Datasets with Temporal Distribution Shifts: Global Crude Oil Asset Price and Volatility
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://oilpricebenchmarks.github.io" # the base hostname & protocol for your site e.g., http://willianjusten.com
+
+# Paper settings
+paper_title: Real World Time Series Benchmark Datasets with Temporal Distribution Shifts
+paper_subtitle: Global Crude Oil Asset Price and Volatility
+email: oilpricebenchmarks@gmail.com
+# twitter_username: lorem_ipsum
+# instagram_username: lorem_ipsum
+# facebook_username: lorem_ipsum
+# linkedin_username: lorem_ipsum
+# github_username:  lorem_ipsum
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
+# gplus_username:  lorem_ipsum
+
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
