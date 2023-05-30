@@ -1,25 +1,35 @@
 <div class="paper-details">
   <h1>Abstract</h1>
   <p>
-    We present time-series benchmarks in the financial domain, focusing on global crude oil price markers: West Texas
-    Intermediate (WTI), Brent Blend, and Dubai Crude. These datasets cover over 30 years and exhibit significant
-    distribution shifts.
-    <br> 
-    <br> 
+    The scarcity of task-labeled time-series benchmarks in the financial domain hinders progress in continual learning
+    and AI algorithm development. Addressing this deficit would foster innovation in this area.
+    <br>
+    <br>
+    Therefore, we present <b>COB</b>, <b>c</b>rude <b>o</b>il <b>b</b>enchmark datasets. COB includes 30 years of
+    asset prices that exhibit significant distribution shifts and comes with corresponding task, or regime, labels based
+    on these distribution shifts for the three most important crude oils in the world: West Texas Intermediate (WTI),
+    Brent Blend, and Dubai Crude.
+    <br>
+    <br>
     Time-series data pose challenges such as correlatedness, non-stationarity, missing data, and spurious outliers. We
     address the problem of out-of-distribution detection and emphasize the relevance of our benchmarks for continual
     learning.
-    <br> 
-    <br> 
-    Our contributions include creating real-world benchmark datasets by transforming asset price data into volatility proxies, fitting
-    models using expectation-maximization, generating contextual task labels that align with real-world events, and providing these labels to the public.
-    <br> 
-    <br> 
+    <br>
+    <br>
+    Our contributions include creating real-world benchmark datasets by transforming asset price data into volatility
+    proxies, fitting
+    models using expectation-maximization, generating contextual task labels that align with real-world events, and
+    providing these labels to the public.
+    <br>
+    <br>
     We hope these benchmarks accelerate research in handling distribution shifts in real-world data, in particular due
     to the global importance of the assets represented by the datasets.
     <br>
     <br>
-    <a class="center-fit" href="https://github.com/oilpricebenchmarks/oilpricebenchmarks.github.io/raw/main/assets/data.zip">Download Benchmark Datasets with Task Labels here</a>
+    <br>
+    <a class="center-fit big"
+      href="https://github.com/oilpricebenchmarks/oilpricebenchmarks.github.io/raw/main/assets/data.zip">Download
+      Benchmark Datasets with Task Labels</a>
   </p>
 </div>
 <div class="paper-details">
@@ -29,29 +39,31 @@
     task, or regimes, based on asset price volatility, a macroeconomic trend that correlates with critical global
     events, such as economic downturns or recessions.
   </p>
-    <figure class="center">
-      <img class="center-fit" src="/assets/imgs/brent_price_to_label_w_recess_k=3.png">
-      <figcaption>Label Generation on Brent Blend Crude Oil Data</figcaption>
-    </figure>
+  <figure class="center">
+    <img class="center-fit" src="/assets/imgs/brent_price_to_label_w_recess_k=3.png">
+    <figcaption>Label Generation on Brent Blend Crude Oil Data</figcaption>
+  </figure>
   <p>
-    We provide the benchmark datasets and task labels for each step for each dataset in the results section below.
-    <br> 
-    <br> 
-    Furthermore, we evaluate four continual learning algorithms on all three datasets. Two of these algorithms, MoB and
-    MOLe, instantiate new few-shot models adapted from a meta-learned prior. The two others, MAML k-shot and MAML Continuous
-    use a single model that is adapted from a meta-learned prior.
+    We evaluate four continual learning algorithms: (1) MOLe, (2) MoB, (3) MAML k-shot, and (4) MAML
+    Continuous on all three datasets.
+    <br>
+    <br>
+    Two of these algorithms, MoB and MOLe, instantiate new few-shot models adapted from a meta-learned prior. The two
+    others, MAML k-shot and MAML Continuous use a single model that is adapted from a meta-learned prior.
   </p>
 </div>
 <div class="paper-details">
   <h1>Results</h1>
 
-  <b>1. The benchmark datasets (WTI and Brent resampled weekly, Dubai remained monthly) and task labels can be downloaded</b> <a href="https://github.com/oilpricebenchmarks/oilpricebenchmarks.github.io/raw/main/assets/data.zip">here.</a>
+  1. The benchmark datasets (WTI and Brent resampled weekly, Dubai remained monthly) and task labels can be
+  downloaded <a
+    href="https://github.com/oilpricebenchmarks/oilpricebenchmarks.github.io/raw/main/assets/data.zip">here.</a>
   <br>
-  <br>  
+  <br>
   2. We report the mean squared error of each algorithm on each benchmark dataset. For MoB and MOLe we also report the
   number of models instantiated.
-  <br> 
-  <br> 
+  <br>
+  <br>
   (Figures to be added)
   <p></p>
 </div>
@@ -62,16 +74,16 @@
     market and generated task labels aligning with significant real-world events, creating a rich context for
     further exploration and understanding.
     <br>
-    <br>  
+    <br>
     Our goal is to fuel advancements in areas such as continual learning and out-of-distribution detection, while
-    addressing challenges posed by sequential data. 
+    addressing challenges posed by sequential data.
     <br>
     <br>
     We believe that these
     benchmarks, due to the societal importance of the assets they represent, can make a substantial contribution to AI
     research, particularly in handling real-world data that contains distribution shifts.
     <br>
-    <br>  
+    <br>
     As AI continues to permeate every sector, the importance of such representative, real-world benchmarks will continue
     to grow.
   </p>

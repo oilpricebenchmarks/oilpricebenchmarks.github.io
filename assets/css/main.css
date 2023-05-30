@@ -86,6 +86,9 @@ a {
     text-align: center;
     display: block;
 }
+.big {
+    font-size: 160%
+}
 
 abbr[title] {
     border-bottom  : none;
@@ -4897,8 +4900,7 @@ sup {
     font-size  : 24px;
     display    : block;
     line-height: 1;
-    color      : #fff;
-    margin-top : 10px
+    color      : #fff;    margin-top : 10px
 }
 
 @media only screen and (min-width:768px) {
@@ -4944,12 +4946,12 @@ sup {
 }
 
 .header-icons .icon {
-    height       : 20px;
-    padding      : 10px;
+    height       : 14px;
+    padding      : 5px;
     border-radius: 50%;
     transition   : all .5s;
-    width        : 20px;
-    font-size    : 20px;
+    width        : 14px;
+    font-size    : 14px;
     margin       : 5px;
     border       : 2px solid #fff
 }
@@ -4962,10 +4964,10 @@ sup {
 
 @media only screen and (min-width:768px) {
     .header-icons .icon {
-        width      : 30px;
-        height     : 30px;
-        font-size  : 30px;
-        line-height: 30px
+        width      : 20px;
+        height     : 20px;
+        font-size  : 20px;
+        line-height: 20px
     }
 }
 
