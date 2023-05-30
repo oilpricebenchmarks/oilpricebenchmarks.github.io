@@ -133,14 +133,25 @@ audio:not([controls]) {
     height : 0
 }
 
-img {
+#container{
+    max-width: 400px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* img {
     border-style: none
 }
 .center-fit {
-    max-width: 860px;
-    max-height: 100vh;
+    display: block;
+    max-width: 740px;
+    width: auto;
+    height: 100%;
     margin: auto;
-}
+} */
 
 svg:not(:root) {
     overflow: hidden
