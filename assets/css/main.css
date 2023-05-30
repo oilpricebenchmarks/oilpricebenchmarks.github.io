@@ -4908,32 +4908,38 @@ sup {
 }
 
 .header .site-description {
-    font-size  : 24px;
+    font-size  : 22px;
     display    : block;
     line-height: 1;
-    color      : #fff;    margin-top : 10px
+    color      : #fff;    
+    margin-top : 10px;
+    margin-bottom: -15px;
 }
 
 @media only screen and (min-width:768px) {
     .header .site-description {
-        font-size: 24px
+        font-size: 22px
     }
 }
 
 .header-links {
-    margin: 10px
+    margin: 5px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    text-align     : center;
 }
 
 .header-links .link {
     color          : #fff;
     text-decoration: none;
-    font-size      : 16px;
-    margin         : 10px
+    font-size      : 14px;
+    margin         : 5px
 }
 
 @media only screen and (min-width:768px) {
     .header-links .link {
-        font-size: 16px
+        font-size: 14px
     }
 }
 
@@ -5001,9 +5007,9 @@ sup {
     top                    : 50%;
     left                   : 50%;
     -webkit-transform      : translate(-50%, -50%);
-    transform              : translate(-50%, -50%);
-    width                  : 100px;
-    height                 : 100px;
+    transform              : translate(-50%, -25%);
+    width                  : 60px;
+    height                 : 60px;
     fill                   : #fff;
     -webkit-animation      : pulse 1.3s infinite;
     animation              : pulse 1.3s infinite
