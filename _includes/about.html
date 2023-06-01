@@ -62,11 +62,16 @@
     href="https://github.com/oilpricebenchmarks/oilpricebenchmarks.github.io/raw/main/assets/data.zip">here.</a>
   <br>
   <br>
-  2. We report the mean squared error of each algorithm on each benchmark dataset. For MoB and MOLe we also report the
-  number of models instantiated.
+  2. We report the Percent Improvement in MSE of each algorithm on each benchmark dataset over three Forecast Lengths. 
+  <ul>
+    <li>For WTI and Brent these are 1 week, 4 weeks (1 month), and 13 weeks (1 quarter).</li>
+    <li>Since Dubai Crude data is less granular, we use Forecast Lengths 1, 2, and 3 months (1 quarter), respectively.</li>
   <br>
   <br>
-  (Figures to be added)
+  <center>
+    <img class="center-fit" src="/assets/imgs/model_improvement_labels_even_larger_fontsizes_and_figure.png">
+    <figcaption><b>The task labels our algorithm generates improve model accuracy universally</b> over four continual learning algorithms and three forecast lengths</figcaption>
+  </center>
   <p></p>
 </div>
 <div class="paper-details">
